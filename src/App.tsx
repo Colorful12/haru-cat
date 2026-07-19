@@ -1,5 +1,5 @@
 import './App.css'
-import haruImage from './assets/haru.svg'
+import { HaruCat } from './HaruCat'
 
 function App() {
   return (
@@ -18,13 +18,7 @@ function App() {
           <span>Default</span>
         </div>
         <div className="preview__canvas">
-          <img
-            className="preview__image"
-            src={haruImage}
-            alt="ハルくんの仮画像"
-            width="160"
-            height="160"
-          />
+          <HaruCat />
         </div>
       </section>
     </main>

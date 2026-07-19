@@ -70,12 +70,6 @@
   background-size: 24px 24px;
 }
 
-.preview__image {
-  display: block;
-  width: 160px;
-  height: 160px;
-}
-
 @media (max-width: 600px) {
   .playground {
     width: min(100% - 24px, 960px);
