@@ -70,13 +70,10 @@
   background-size: 24px 24px;
 }
 
-.preview__canvas p {
-  margin: 0;
-  padding: 10px 14px;
-  border-radius: 8px;
-  color: #707986;
-  background: rgb(255 255 255 / 92%);
-  font-size: 0.875rem;
+.preview__image {
+  display: block;
+  width: 160px;
+  height: 160px;
 }
 
 @media (max-width: 600px) {

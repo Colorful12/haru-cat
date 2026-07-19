@@ -1,4 +1,5 @@
 import './App.css'
+import haruImage from './assets/haru.svg'
 
 function App() {
   return (
@@ -17,7 +18,13 @@ function App() {
           <span>Default</span>
         </div>
         <div className="preview__canvas">
-          <p>HaruCat component will appear here.</p>
+          <img
+            className="preview__image"
+            src={haruImage}
+            alt="ハルくんの仮画像"
+            width="160"
+            height="160"
+          />
         </div>
       </section>
     </main>
