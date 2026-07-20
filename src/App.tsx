@@ -15,10 +15,17 @@ function App() {
       <section className="preview" aria-labelledby="preview-title">
         <div className="preview__header">
           <h2 id="preview-title">Preview</h2>
-          <span>Default</span>
+          <span>size</span>
         </div>
         <div className="preview__canvas">
-          <HaruCat />
+          <figure className="preview__example">
+            <HaruCat />
+            <figcaption>Default (120px)</figcaption>
+          </figure>
+          <figure className="preview__example">
+            <HaruCat size={160} />
+            <figcaption>size=160</figcaption>
+          </figure>
         </div>
       </section>
     </main>

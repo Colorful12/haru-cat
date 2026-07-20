@@ -59,15 +59,34 @@
 }
 
 .preview__canvas {
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px, 10vw, 96px);
   min-height: 360px;
   padding: 32px;
-  place-items: center;
   background-color: #f8f9fb;
   background-image:
     linear-gradient(#e5e8ed 1px, transparent 1px),
     linear-gradient(90deg, #e5e8ed 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+.preview__example {
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+  margin: 0;
+}
+
+.preview__example figcaption {
+  padding: 6px 10px;
+  border: 1px solid #d9dee7;
+  border-radius: 6px;
+  color: #626b78;
+  background: #fff;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 600px) {
@@ -81,6 +100,7 @@
   }
 
   .preview__canvas {
+    flex-direction: column;
     min-height: 280px;
   }
 }
