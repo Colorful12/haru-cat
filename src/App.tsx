@@ -15,19 +15,16 @@ function App() {
       <section className="preview" aria-labelledby="preview-title">
         <div className="preview__header">
           <h2 id="preview-title">Preview</h2>
-          <span>size</span>
+          <span>Fixed position</span>
         </div>
         <div className="preview__canvas">
-          <figure className="preview__example">
-            <HaruCat />
-            <figcaption>Default (120px)</figcaption>
-          </figure>
-          <figure className="preview__example">
-            <HaruCat size={160} />
-            <figcaption>size=160</figcaption>
-          </figure>
+          <p className="preview__hint">
+            ハルくんは画面右下に固定表示されています。
+          </p>
         </div>
       </section>
+
+      <HaruCat position="bottom-right" size={120} />
     </main>
   )
 }

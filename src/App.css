@@ -59,12 +59,10 @@
 }
 
 .preview__canvas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(40px, 10vw, 96px);
+  display: grid;
   min-height: 360px;
   padding: 32px;
+  place-items: center;
   background-color: #f8f9fb;
   background-image:
     linear-gradient(#e5e8ed 1px, transparent 1px),
@@ -72,14 +70,8 @@
   background-size: 24px 24px;
 }
 
-.preview__example {
-  display: grid;
-  justify-items: center;
-  gap: 16px;
+.preview__hint {
   margin: 0;
-}
-
-.preview__example figcaption {
   padding: 6px 10px;
   border: 1px solid #d9dee7;
   border-radius: 6px;
@@ -100,7 +92,6 @@
   }
 
   .preview__canvas {
-    flex-direction: column;
     min-height: 280px;
   }
 }
