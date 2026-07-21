@@ -45,7 +45,7 @@ Key characteristics:
 - No visible neck
 - Very simplified silhouette
 
-The base illustration for v0.0.1 is `haru-sitting.png`. It is the initial static
+The base illustration for v0.0.1 is `haru-sit-01.png`. It is the initial static
 pose, but it is not expected to support every future behavior. Walking,
 running, stretching, and other states may use different illustrations.
 
@@ -66,7 +66,7 @@ Clip Studio Paint / Procreate
 The v0.0.1 asset will be stored at:
 
 ```text
-src/assets/haru-sitting.png
+src/assets/haru-sit-01.png
 ```
 
 Production specification:
@@ -80,7 +80,7 @@ Production specification:
 
 The layered source artwork should preserve separable eyes, ears, tail, head,
 body, and other useful parts when practical. Only the flattened
-`haru-sitting.png` is included in v0.0.1.
+`haru-sit-01.png` is included in v0.0.1.
 
 Future versions may use PNG frame animation, multiple PNG layers, sprite sheets,
 or CSS transforms. SVG is not required.

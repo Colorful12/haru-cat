@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import haruImage from './assets/haru.svg'
+import haruImage from './assets/haru-sit-01.png'
 
 export type HaruCatPosition =
   | 'bottom-left'
