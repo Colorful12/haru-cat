@@ -1,2 +1,2 @@
-export { HaruCat } from './HaruCat'
-export type { HaruCatPosition, HaruCatProps } from './HaruCat'
+export { HaruCat } from './HaruCat.js'
+export type { HaruCatPosition, HaruCatProps } from './HaruCat.js'
