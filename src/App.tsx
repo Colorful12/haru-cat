@@ -1,5 +1,5 @@
 import './App.css'
-import { HaruCat } from './HaruCat'
+import { HaruCat } from './index'
 
 function App() {
   return (
