@@ -1,89 +1,106 @@
-# React + TypeScript + Vite
+# Haru Cat — a tiny cat living in your website
 
-> **License notice:** The Haru Cat software is available under the MIT License, but the Gray Cat Haru character and artwork are separately protected and are not MIT-licensed.
-> See [LICENSE.md](./LICENSE.md) or the [Japanese licensing notice](./LICENSE.ja.md) before using or redistributing this project.
+Haru Cat is a React component for placing Haru-kun, a small original cat
+character, at the bottom of your website.
+
+This first release displays a static image. Animations and additional behaviors
+are planned for future versions.
+
+[日本語](./README.ja.md)
+
+## Installation
+
+```sh
+npm install haru-cat
+```
+
+Haru Cat supports React 18 and React 19.
+
+## Usage
+
+```tsx
+import { HaruCat } from 'haru-cat'
+
+export default function App() {
+  return <HaruCat position="bottom-right" size={120} />
+}
+```
+
+Haru-kun is displayed in the bottom-right corner by default.
+
+```tsx
+<HaruCat />
+```
+
+You can also place Haru-kun at the bottom-left or bottom-center of the viewport.
+
+```tsx
+<HaruCat position="bottom-left" />
+<HaruCat position="bottom-center" />
+```
+
+## Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| `position` | `'bottom-left' \| 'bottom-center' \| 'bottom-right'` | `'bottom-right'` | Position along the bottom of the viewport. |
+| `size` | `number` | `120` | Width and height of the image in pixels. |
+| `offset` | `number` | `16` | Distance from the bottom and, when applicable, the left or right edge in pixels. |
+| `zIndex` | `number` | `9999` | CSS `z-index` of the component. |
+| `className` | `string` | `undefined` | Class name applied to the wrapper element. |
+
+The component uses `position: fixed` and `pointer-events: none`, so Haru-kun
+stays at the bottom of the viewport without blocking buttons or links.
+
+## TypeScript
+
+The component props and position type are exported from the package.
+
+```tsx
+import type { HaruCatPosition, HaruCatProps } from 'haru-cat'
+```
+
+## Development
+
+```sh
+npm install
+npm run dev
+```
+
+Run the checks and library build with:
+
+```sh
+npm run lint
+npm run build
+npm pack --dry-run
+```
+
+See the [design notes](https://github.com/Colorful12/haru-cat/blob/main/docs/design-notes.md)
+for the project's principles and planned direction.
 
 ## Creators
 
 Haru Cat is developed by [taki](https://x.com/taki73_cat).
 
-Haru-kun is the original character known in English as Gray Cat Haru and in Japanese as ジト目猫のハル.
-The character and artwork are created by [73cat](https://x.com/73cat_mina).
+Haru-kun is the original character known in English as Gray Cat Haru and in
+Japanese as ジト目猫のハル. The character and artwork are created by
+[73cat](https://x.com/73cat_mina).
 
-## Commercial licensing
+## License
 
-For commercial use of the Gray Cat Haru character or artwork, please contact [73cat](https://x.com/73cat_mina) before publishing or using it in production.
+The software and character artwork use different licenses.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- The Haru Cat software is Copyright (c) 2026 taki and is available under the
+  [MIT License](./LICENSE-CODE.md).
+- The Gray Cat Haru character and artwork are Copyright (c) 2026 73cat and are
+  subject to the separate [character and artwork license](./LICENSE-ASSETS.md).
 
-Currently, two official plugins are available:
+The character and artwork are not MIT-licensed. Limited personal,
+non-commercial website use is permitted under the stated conditions, including
+credit requirements. Standalone redistribution, merchandising, and AI/ML use
+are prohibited. Commercial use requires express permission from 73cat before
+publication or production use.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+Read the complete [licensing overview](./LICENSE.md) before using or
+redistributing Haru Cat. A [Japanese licensing overview](./LICENSE.ja.md) is
+also available.
