@@ -41,7 +41,7 @@ export function HaruCat({
     <span className={className} style={positionStyle}>
       <img
         src={haruImage}
-        alt="ハルくん"
+        alt=""
         width={size}
         height={size}
         style={{ display: 'block' }}

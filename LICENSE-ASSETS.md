@@ -26,9 +26,9 @@ This exception does not cover a portfolio operated for a company or client, a si
 
 Use by a company or other organization, including a nonprofit organization, is not automatically covered by this permission for personal use.
 
-## 2. Required credit
+## 2. Required credit for Character Asset use
 
-A permitted public website must display either of the following credits in a reasonably visible location that visitors can easily access, such as a site footer, About page, Credits page, or Acknowledgements page:
+A public website displaying Character Assets under Section 1 must display either of the following credits in a reasonably visible location that visitors can easily access, such as a site footer, About page, Credits page, or Acknowledgements page:
 
 > Gray Cat Haru character and artwork by 73cat
 

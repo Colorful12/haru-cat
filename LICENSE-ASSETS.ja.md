@@ -27,9 +27,9 @@ Copyright (c) 2026 73cat. All rights reserved.
 
 会社その他の団体による利用は、非営利団体による利用を含め、この個人利用の許可には自動的に含まれません。
 
-## 2. クレジット表記
+## 2. キャラクター素材の利用に必要なクレジット表記
 
-許可を受けたWebサイトを公開する場合は、サイトのフッター、About、Credits、Acknowledgementsなど、利用者が簡単に確認できる場所に、次のいずれかのクレジットを表示してください。
+第1条に基づきキャラクター素材を表示するWebサイトを公開する場合は、サイトのフッター、About、Credits、Acknowledgementsなど、利用者が簡単に確認できる場所に、次のいずれかのクレジットを表示してください。
 
 > Gray Cat Haru character and artwork by 73cat
 

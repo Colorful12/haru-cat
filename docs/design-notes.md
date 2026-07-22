@@ -138,6 +138,10 @@ zIndex = 9999
 pointer-events = none
 ```
 
+The v0.0.1 image is decorative and uses empty alternative text. If a future
+behavior communicates meaningful information, revisit its accessibility
+semantics as part of that feature.
+
 Example:
 
 ```tsx
@@ -352,7 +356,7 @@ These decisions should be made when their first required milestone is designed:
 - Public API name and shape for behavior/state selection
 - Whether animation uses layered PNGs, frames, sprite sheets, or CSS transforms
 - Exact default behavior after animation support exists
-- Accessibility semantics for a decorative versus meaningful Haru-kun
+- Accessibility semantics for future meaningful Haru-kun behaviors
 - Selector, ref, or both for element-targeting behavior
 - Long-term z-index and stacking-context strategy
 
