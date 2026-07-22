@@ -1,6 +1,6 @@
 # Haru Cat Project — Design Notes
 
-Last updated: 2026-07-20
+Last updated: 2026-07-23
 
 Status: Living document. The principles describe the intended product direction;
 roadmap versions and proposed APIs may change as the project develops.
@@ -19,7 +19,7 @@ The library should optimize for personality rather than animation quantity.
 
 ## Product principles
 
-- Haru behaves like a living creature, not an instantly reactive UI effect.
+- Haru-kun behaves like a living creature, not an instantly reactive UI effect.
 - Small delays, hesitation, and imperfect behavior are part of the character.
 - Behavior is modeled as state; animation effects are implementations of that
   state.
@@ -29,11 +29,22 @@ The library should optimize for personality rather than animation quantity.
   behavior requirements are understood.
 - Existing static usage should keep working as animated behaviors are added.
 
+## Character naming
+
+- Official Japanese name: `ジト目猫のハル`
+- Official English name: `Gray Cat Haru`
+- Japanese nickname used in general prose: `ハルくん`
+- English nickname used in general prose: `Haru-kun`
+- Library and component names remain `Haru Cat` and `HaruCat`.
+
+Formal rights and licensing text should use the official names. Product copy,
+examples, and descriptions of the character may use the nicknames.
+
 ## Character design
 
-Haru is an original, simplified character and is not based on realistic cat
-anatomy. Animation proposals must follow Haru's design rather than assume a real
-cat skeleton or realistic proportions.
+Haru-kun is an original, simplified character and is not based on realistic
+cat anatomy. Animation proposals must follow Haru-kun's design rather than
+assume a real cat skeleton or realistic proportions.
 
 Key characteristics:
 
@@ -93,7 +104,7 @@ no animation.
 Required outcomes:
 
 - Import `HaruCat` from `haru-cat`
-- Display the static Haru PNG
+- Display the static Haru-kun PNG
 - Configure position and size
 - Provide TypeScript types
 - Document installation and usage
@@ -178,7 +189,7 @@ animate existing usage.
 
 ## Animation philosophy
 
-Haru should not react as soon as an input occurs.
+Haru-kun should not react as soon as an input occurs.
 
 Avoid:
 
@@ -190,7 +201,7 @@ Prefer:
 
 ```text
 Cursor moves
-  -> Haru notices
+  -> Haru-kun notices
   -> looks
   -> waits
   -> maybe walks
@@ -206,14 +217,14 @@ an effect.
 
 Version numbers below are planning labels until each release is finalized.
 
-### v0.0.1 — Static Haru
+### v0.0.1 — Static Haru-kun
 
 - Publish the real npm package
 - Display the flattened sitting PNG
 - Support the initial positioning and sizing API
 - Include types and user documentation
 
-### v0.0.2 — Haru feels alive
+### v0.0.2 — Haru-kun feels alive
 
 - Breathing
 - Blinking
@@ -224,7 +235,7 @@ The illustration technique remains open until the artwork is evaluated. Options
 include whole-image CSS motion, layered PNGs, or PNG frames. Reduced-motion
 preferences and resource cleanup must be considered when implementation begins.
 
-### v0.0.3 — Haru notices the environment
+### v0.0.3 — Haru-kun notices the environment
 
 Possible behaviors:
 
@@ -244,8 +255,8 @@ Expected movement sequence:
 Sit -> stand -> walk -> stop -> sit
 ```
 
-Haru should not teleport between locations. Standing before walking and sitting
-after stopping are part of making the movement feel natural.
+Haru-kun should not teleport between locations. Standing before walking and
+sitting after stopping are part of making the movement feel natural.
 
 ### v0.2.0 — Website interaction
 
@@ -301,6 +312,39 @@ concrete styling or integration need.
 - Part-based PNG animation
 - Multiple characters
 
+## Rights and licensing
+
+Haru Cat uses a split-license model so that the software can remain open while
+the value and identity of the Gray Cat Haru character remain protected.
+
+- The component code and related software are licensed under the MIT License.
+- Gray Cat Haru, the character design, and the official artwork remain
+  Copyright (c) 2026 73cat and use a separate asset license.
+- Personal, non-commercial website display is permitted with credit.
+- Commercial website use requires prior express permission from 73cat, normally
+  recorded by email or direct message, and is generally paid.
+- Standalone artwork redistribution, unauthorized modification,
+  merchandising, and AI/ML use are prohibited.
+- Original, non-commercial fan works created without copying the official
+  assets or using generative AI are permitted under the asset license.
+- Private local evaluation is allowed so that developers can assess the
+  package before requesting a commercial license.
+
+The repository and npm package must never describe the entire package simply
+as MIT-licensed. README, package metadata, and distributed license files must
+consistently distinguish the software from the character and artwork.
+
+## v0.0.1 release gate
+
+Before the first npm publication, perform an adversarial review with a separate
+agent. The review must inspect the packed package, public API, README, package
+metadata, and licensing language for ambiguity, contradictions, missing files,
+and unintended permissions.
+
+Resolve the findings and repeat the relevant checks before publication. Do not
+run `npm publish` until 73cat has reviewed the final package contents and given
+explicit approval.
+
 ## Open decisions
 
 These decisions should be made when their first required milestone is designed:
@@ -308,7 +352,7 @@ These decisions should be made when their first required milestone is designed:
 - Public API name and shape for behavior/state selection
 - Whether animation uses layered PNGs, frames, sprite sheets, or CSS transforms
 - Exact default behavior after animation support exists
-- Accessibility semantics for a decorative versus meaningful Haru
+- Accessibility semantics for a decorative versus meaningful Haru-kun
 - Selector, ref, or both for element-targeting behavior
 - Long-term z-index and stacking-context strategy
 

@@ -1,5 +1,19 @@
 # React + TypeScript + Vite
 
+> **License notice:** The Haru Cat software is available under the MIT License, but the Gray Cat Haru character and artwork are separately protected and are not MIT-licensed.
+> See [LICENSE.md](./LICENSE.md) or the [Japanese licensing notice](./LICENSE.ja.md) before using or redistributing this project.
+
+## Creators
+
+Haru Cat is developed by [taki](https://x.com/taki73_cat).
+
+Haru-kun is the original character known in English as Gray Cat Haru and in Japanese as ジト目猫のハル.
+The character and artwork are created by [73cat](https://x.com/73cat_mina).
+
+## Commercial licensing
+
+For commercial use of the Gray Cat Haru character or artwork, please contact [73cat](https://x.com/73cat_mina) before publishing or using it in production.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

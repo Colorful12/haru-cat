@@ -2,6 +2,11 @@
   "name": "haru-cat",
   "private": true,
   "version": "0.0.0",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": {
+    "name": "taki",
+    "url": "https://x.com/taki73_cat"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
